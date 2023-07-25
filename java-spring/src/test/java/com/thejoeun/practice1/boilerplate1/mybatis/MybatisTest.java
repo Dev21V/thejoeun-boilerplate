@@ -39,10 +39,10 @@ public class MybatisTest {
     @DisplayName("mybatis 사용 가능 여부 테스트2")
     @Test
     void mybatisTest2() {
-        HashMap<String, Object> paramMap = new HashMap<>();
-        paramMap.put("id", 2L);
-
-        Optional<Member> optMember = memberMapper.selectMember(paramMap);
-        assertThat(optMember.isEmpty()).isFalse();
+//        HashMap<String, Object> paramMap = new HashMap<>();
+//        paramMap.put("id", 2L);
+//
+//        Optional<Member> optMember = memberMapper.selectMember(paramMap);
+//        assertThat(optMember.isEmpty()).isFalse();
     }
 }

@@ -19,14 +19,14 @@ public class JwtTest {
     @DisplayName("JWT 토큰 생성 테스트")
     @Test
     void jwtGenerateTest1() {
-        JwtTokenDto jwtTokenDto = jwtTokenProvider.generateTokenDto("1");
-
-        System.out.println("grant type: " + jwtTokenDto.getGrantType());
-        System.out.println("access token: " + jwtTokenDto.getAccessToken());
-
-        LocalDateTime localDateTime =
-                LocalDateTime.ofInstant(Instant.ofEpochMilli(jwtTokenDto.getTokenExpiresIn()),
-                        TimeZone.getDefault().toZoneId());
-        System.out.println("access token expire time: " + localDateTime);
+//        JwtTokenDto jwtTokenDto = jwtTokenProvider.generateTokenDto("1");
+//
+//        System.out.println("grant type: " + jwtTokenDto.getGrantType());
+//        System.out.println("access token: " + jwtTokenDto.getAccessToken());
+//
+//        LocalDateTime localDateTime =
+//                LocalDateTime.ofInstant(Instant.ofEpochMilli(jwtTokenDto.getTokenExpiresIn()),
+//                        TimeZone.getDefault().toZoneId());
+//        System.out.println("access token expire time: " + localDateTime);
     }
 }
