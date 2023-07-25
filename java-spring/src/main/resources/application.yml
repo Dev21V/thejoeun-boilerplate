@@ -2,17 +2,17 @@ server.port: 8091 # tomcat?? ?? 8091?? ??
 
 spring:
   security:
-    #    oauth2:
-    #      client:
-    #        registration:
-    #          google:
-    ##            client-id: 64680890268-vavsobuabuf5adj9d1rr06jnt6vl3u8t.apps.googleusercontent.com
-    ##            client-secret: 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
-    #            client-id: 6468089
-    #            client-secret: GOC
-    #            scope:
-    #              - email
-    #              - profile
+    oauth2:
+      client:
+        registration:
+          google:
+#            client-id: 297733209167-0bvqlmne236eo04qsjplebg5nmeno1dm.apps.googleusercontent.com
+#            client-secret: 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
+            client-id: 6468089
+            client-secret: GOC
+            scope:
+              - email
+              - profile
     user:     # spring security ?? ???? ??
       name: user
       password: 1234
@@ -25,29 +25,32 @@ spring:
     console:
       path: /h2-console
       enabled: true
-    jpa:
-      show-sql: true
-      defer-datasource-initialization: true # data.sql ??? ??? ????? ??
-      properties:
-        hibernate:
-          format_sql: true  # sql? pretty?? ???
-          use_sql_comments: true
-      generate-ddl: true   # true, false
+  jpa:
+    show-sql: true
+    defer-datasource-initialization: true # data.sql ??? ??? ????? ??
+    properties:
       hibernate:
-        ddl-auto: create    # create, create-drop, update, validate, none
-    sql:
-      init:
-        mode: always
-        # always: embeded db? ?? ?? db ??? spring boot? ???? ?? data.sql schema.sql import.sql? ?? ??
-        # never: data.sql schema.sql import.sql? ???? ??
-        encoding: utf-8
-    devtools:
-      livereload:
-        enabled: true
+        format_sql: true  # sql? pretty?? ???
+        use_sql_comments: true
+    generate-ddl: true   # true, false
+    hibernate:
+      ddl-auto: create    # create, create-drop, update, validate, none
+  sql:
+    init:
+      mode: always
+      # always: embeded db? ?? ?? db ??? spring boot? ???? ?? data.sql schema.sql import.sql? ?? ??
+      # never: data.sql schema.sql import.sql? ???? ??
+      encoding: utf-8
+  devtools:
+    livereload:
+      enabled: true
 
-  mybatis:
-    mapper-locations: mybatis-mapper/**/*.xml # mapper.xml
-    configuration:
-      map-underscore-to-camel-case: true # camel case
-    # xml? ?? ?? ?? ????? ?? ????? ????? ??
-    type-aliases-package: com.thejoeun.practice1.boilerplate1.model
+mybatis:
+  mapper-locations: mybatis-mapper/**/*.xml # mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true # camel case
+  # xml? ?? ?? ?? ????? ?? ????? ????? ??
+  type-aliases-package: com.thejoeun.practice1.boilerplate1.model
+
+jwt:
+  secret: 1234
