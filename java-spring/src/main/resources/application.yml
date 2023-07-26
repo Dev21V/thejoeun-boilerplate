@@ -20,7 +20,7 @@ spring:
     url: ${JDBC_DATABASE_URL} # mariadb
     driver-class-name: org.mariadb.jdbc.Driver
     username: ${USERNAME}
-    password: ${}
+    password: ${JDBC_PASSWORD}
   h2:
     console:
       path: /h2-console
