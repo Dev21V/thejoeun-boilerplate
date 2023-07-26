@@ -6,21 +6,21 @@ spring:
       client:
         registration:
           google:
-#            client-id: 297733209167-0bvqlmne236eo04qsjplebg5nmeno1dm.apps.googleusercontent.com
-#            client-secret: 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
+            #            client-id: 297733209167-0bvqlmne236eo04qsjplebg5nmeno1dm.apps.googleusercontent.com
+            #            client-secret: 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
             client-id: 6468089
             client-secret: GOC
             scope:
               - email
               - profile
-    user:     # spring security ?? ???? ??
+    user: # spring security ?? ???? ??
       name: user
       password: 1234
   datasource:
-    url: jdbc:mariadb://localhost:3306/mydb         # mariadb
+    url: ${JDBC_DATABASE_URL} # mariadb
     driver-class-name: org.mariadb.jdbc.Driver
-    username: root
-    password: 1234
+    username: ${USERNAME}
+    password: ${JDBC_PASSWORD}
   h2:
     console:
       path: /h2-console
@@ -30,11 +30,11 @@ spring:
     defer-datasource-initialization: true # data.sql ??? ??? ????? ??
     properties:
       hibernate:
-        format_sql: true  # sql? pretty?? ???
+        format_sql: true # sql? pretty?? ???
         use_sql_comments: true
-    generate-ddl: true   # true, false
+    generate-ddl: true # true, false
     hibernate:
-      ddl-auto: create    # create, create-drop, update, validate, none
+      ddl-auto: create # create, create-drop, update, validate, none
   sql:
     init:
       mode: always
