@@ -17,10 +17,10 @@ spring:
       name: user
       password: 1234
   datasource:
-    url: ${JDBC_DATABASE_URL} # mariadb
+    url: jdbc:mariadb://im.21v.in:33306/mydb # mariadb
     driver-class-name: org.mariadb.jdbc.Driver
-    username: ${USERNAME}
-    password: ${JDBC_PASSWORD}
+    username: mydb
+    password: roqkf@Rhdn1
   h2:
     console:
       path: /h2-console
