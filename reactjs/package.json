@@ -10,6 +10,7 @@
     "axios": "^1.4.0",
     "bootstrap": "^5.3.0",
     "date-fns": "^2.30.0",
+    "gh-pages": "^5.0.0",
     "jquery": "^3.7.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
@@ -17,14 +18,19 @@
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.14.2",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.88.2"
   },
   "proxy": "http://localhost:8091",
+  "homepage": "https://dev21v.github.io/thejoeun-boilerplate",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "xcopy /Y .\\build\\* ..\\docs\\ /E",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

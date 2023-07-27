@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.30ea52ad.css",
-    "main.js": "/static/js/main.74424514.js",
-    "static/js/787.fade2e9e.chunk.js": "/static/js/787.fade2e9e.chunk.js",
-    "index.html": "/index.html",
-    "main.30ea52ad.css.map": "/static/css/main.30ea52ad.css.map",
-    "main.74424514.js.map": "/static/js/main.74424514.js.map",
-    "787.fade2e9e.chunk.js.map": "/static/js/787.fade2e9e.chunk.js.map"
+    "main.css": "/thejoeun-boilerplate/static/css/main.30ea52ad.css",
+    "main.js": "/thejoeun-boilerplate/static/js/main.e637fc88.js",
+    "static/js/787.fade2e9e.chunk.js": "/thejoeun-boilerplate/static/js/787.fade2e9e.chunk.js",
+    "index.html": "/thejoeun-boilerplate/index.html",
+    "main.30ea52ad.css.map": "/thejoeun-boilerplate/static/css/main.30ea52ad.css.map",
+    "main.e637fc88.js.map": "/thejoeun-boilerplate/static/js/main.e637fc88.js.map",
+    "787.fade2e9e.chunk.js.map": "/thejoeun-boilerplate/static/js/787.fade2e9e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.30ea52ad.css",
-    "static/js/main.74424514.js"
+    "static/js/main.e637fc88.js"
   ]
 }

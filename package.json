@@ -22,11 +22,11 @@
     "webpack": "^5.88.2"
   },
   "proxy": "http://localhost:8091",
-  "homepage": "https://dev21v.github.io/thejoeun-boilerplate/",
+  "homepage": "https://dev21v.github.io/thejoeun-boilerplate",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "xcopy /Y .\\build\\* ..\\docs\\ /E",
+    "postbuild": "echo 1",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
