@@ -10,7 +10,7 @@ root.render(
   <React.StrictMode>
     {/* <HashRouter></HashRouter> */}
     {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
-    <BrowserRouter basename='/thejoeun-boilerplate'>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <App />
     </BrowserRouter>
   </React.StrictMode>
